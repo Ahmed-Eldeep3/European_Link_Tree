@@ -117,10 +117,11 @@ body {
     z-index: 2;
 }
 .logo-img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 5px 15px rgba(13, 122, 184, 0.5));
+    position: relative;
+    z-index: 2;
 }
 
 

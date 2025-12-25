@@ -1,31 +1,32 @@
+// Button Interactions with Direct Links
 const buttons = document.querySelectorAll('.link-button');
 
 buttons.forEach(button => {
     button.addEventListener('click', function(e) {
-        e.preventDefault();
+        // السماح بفتح الرابط بشكل طبيعي
+        // لكن نضيف التأثير البصري أولاً
         
         const rect = this.getBoundingClientRect();
         const x = rect.left + rect.width / 2;
         const y = rect.top + rect.height / 2;
 
-        // Determine color based on button class
+        // تحديد اللون حسب نوع الزر
         let color = 'rgba(13, 122, 184, 1)';
         if (this.classList.contains('btn-facebook')) color = 'rgba(24, 119, 242, 1)';
         if (this.classList.contains('btn-instagram')) color = 'rgba(240, 148, 51, 1)';
         if (this.classList.contains('btn-whatsapp')) color = 'rgba(37, 211, 102, 1)';
         if (this.classList.contains('btn-app')) color = 'rgba(102, 126, 234, 1)';
 
-        // Create explosion
+        // إنشاء الانفجار
         window.createExplosion(x, y, color, 120);
 
-        // Button animation
+        // تأثير الضغط على الزر
         this.style.transform = 'scale(0.95)';
         setTimeout(() => {
             this.style.transform = '';
-        }, 200);
+        }, 150);
 
-        // Add your link redirection here
-        // window.location.href = 'YOUR_LINK_HERE';
+        // الرابط هيفتح تلقائياً لأننا مش بنمنع السلوك الافتراضي
     });
 });
 
@@ -50,4 +51,3 @@ document.addEventListener('mousemove', (e) => {
     document.querySelector('.container').style.transform = 
         `translate(${moveX}px, ${moveY}px)`;
 });
-
