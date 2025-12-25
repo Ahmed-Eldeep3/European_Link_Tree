@@ -1,0 +1,107 @@
+/* Tablet */
+@media (max-width: 768px) {
+    .clinic-name {
+        font-size: 36px;
+    }
+    
+    .clinic-subtitle {
+        font-size: 19px;
+    }
+
+    .clinic-description {
+        font-size: 15px;
+    }
+
+    .link-button {
+        font-size: 18px;
+        padding: 21px 32px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo-icon {
+        font-size: 65px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .clinic-name {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    
+    .clinic-subtitle {
+        font-size: 18px;
+    }
+
+    .clinic-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .link-button {
+        font-size: 17px;
+        padding: 20px 30px;
+        margin: 18px 0;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .logo-icon {
+        font-size: 60px;
+    }
+
+    .link-icon {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+
+    .footer {
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    .footer-icon {
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+    .clinic-name {
+        font-size: 28px;
+    }
+
+    .clinic-subtitle {
+        font-size: 16px;
+    }
+
+    .clinic-description {
+        font-size: 14px;
+    }
+
+    .link-button {
+        font-size: 16px;
+        padding: 18px 25px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo-icon {
+        font-size: 52px;
+    }
+}

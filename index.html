@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUROPEAN CLINIC - مركز العلاج الطبيعي</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Canvas Layers -->
+    <canvas id="constellationCanvas"></canvas>
+    <canvas id="wavesCanvas"></canvas>
+    <canvas id="explosionCanvas"></canvas>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="logo-section">
+            <div class="logo-wrapper">
+                <div class="logo" id="mainLogo">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="European Clinic Logo" class="logo-img">                    </div>
+                </div>
+            </div>
+            <h1 class="clinic-name">EUROPEAN CLINIC</h1>
+            <p class="clinic-subtitle">مركز متخصص في العلاج الطبيعي وإعادة التأهيل</p>
+            <p class="clinic-description">
+                نتميز في تأهيل الإصابات الرياضية وإعادة التأهيل الحركي باستخدام أحدث التقنيات العالمية على أيدي فريق طبي متخصص
+            </p>
+        </div>
+
+        <div class="links-container">
+            <a href="https://www.facebook.com/European.physical.therapy" class="link-button btn-facebook">
+                <i class="fab fa-facebook-f link-icon"></i>
+                <span class="link-text">Facebook</span>
+            </a>
+
+            <a href="https://www.instagram.com/european.center.pt?igsh=MTg0NWFpaGpndWo0aw==" class="link-button btn-instagram">
+                <i class="fab fa-instagram link-icon"></i>
+                <span class="link-text">Instagram</span>
+            </a>
+
+            <a href="https://wa.me/201558438800" class="link-button btn-whatsapp">
+                <i class="fab fa-whatsapp link-icon"></i>
+                <span class="link-text">Whats app</span>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1iLpEXnSLnPeKnMGOiqcg3GMsYPj_Ayb0/view?usp=sharing" class="link-button btn-app">
+                <i class="fas fa-mobile-alt link-icon"></i>
+                <span class="link-text">EUR APP</span>
+            </a>
+
+            <a href="https://europeanptcenter.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAO5etNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeZMWhDzL-G8Ez-0ASFMguOwkl86RlmT6C6X9DTEwzwz-lfruISmBQGhzeqMw_aem_KH5XxkWHGhRmZtI6eJes6g" class="link-button btn-website">
+                <i class="fas fa-globe link-icon"></i>
+                <span class="link-text">EUR Web</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>
+                <span class="footer-icon">🏃‍♂️</span>
+                تأهيل رياضي | علاج طبيعي | إعادة تأهيل حركي
+                <span class="footer-icon">💪</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/constellation.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/explosions.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
